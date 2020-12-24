@@ -1,0 +1,81 @@
+.jumbotron  {
+    background-color: blue;
+}
+.heading {
+    color: white;
+}
+.paragraph {
+    color: white;
+}
+
+/* button {
+    width: 125pt;
+    margin-top: 10px;
+    height: 42pt;
+    background-color: rgb(255, 222, 0);
+    border-radius: 4pt;
+    font-size: 12pt;
+    color: black;
+} */
+
+.slotwrapper {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: -30px;
+    height: 80px;
+    padding-top: 3px;
+}
+.slotwrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    float: left;
+}
+.slotwrapper ul {
+    width: 63px;
+    height:30px;
+    font-size: 200px;
+    line-height: 20px;
+    text-align: center;
+}
+.slotwrapper ul li img {
+    vertical-align: top;
+    padding-top: 6px;
+}
+
+.panel {
+    background-color: blue ;
+    margin-top: -206px;
+}
+
+.spin-wheel {
+    padding-left: 70pt;
+}
+.spin {
+    width: 120pt;
+    height: 42pt;
+    border-radius: 4pt;
+    background-color: rgb(255, 222, 0);
+    letter-spacing: 1.6pt;
+    /* opacity: 70%; */
+}
+
+#btn-example6 {
+    width: 120pt;
+    margin-top: 90px;
+    /* margin-left: 90px; */
+    height: 42pt;
+    border-radius: 4pt;
+    background-color: rgb(255, 222, 0);
+    letter-spacing: 1.6pt; 
+    color: #000; 
+}
+
+@media only screen and (max-width: 414px) {
+    .slotwrapper {
+        /* margin-top: -10px; */
+        margin-left: 5px;
+    }
+}

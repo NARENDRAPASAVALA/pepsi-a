@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="jumbotron text-center">
+            <img src="../../assets/home/Image 22.png">
+            <div *ngIf="!webcamImage">
+                <div class="heading">
+                    <h2>Take a photo of the cap</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Align your phone vertically against the cap <br>
+                        and take a photo to scan the secret code</p>
+                </div>
+                <hr>
+                <div class="image">
+                    <div style="text-align:center">
+                        <div>
+                          <p>{{seconds}}</p>
+                          <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+                          <br/>
+                          <button id="snapshotBtn" (click)="triggerSnapshot();">Next</button>
+                        </div>
+                      </div>
+                    <!-- <img src="../../assets/image/Group 2069.png"> -->
+                </div>
+            </div>
+            <div class="snapshot" *ngIf="webcamImage">
+                <div class="heading">
+                    <h2>Review your photo</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Please check your photo before uploading</p>
+                </div>
+                <hr>
+                <div class="camera">
+                    <img [src]="webcamImage.imageAsDataUrl"/>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-light" style="width: 150px; background-color: white;" (click)="retake()">Re-Take</button>
+                    <button type="button" class="btn btn-warning" style="width: 150px;color: black; margin-left: 20px;background-color: yellow" (click)="next()">Upload</button>
+                </div>
+              </div>
+            <!-- <div class="button">
+                <button mat-raised-button color="primary" (click)="Next()">Next</button>
+            </div> -->
+        </div>
+    </div>
+</div>

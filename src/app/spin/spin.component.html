@@ -1,0 +1,71 @@
+
+<div class="container">
+    <div class="row">
+        <div class="jumbotron text-center">
+            <img src="../../assets/home/Image 22.png">
+
+            <div class="heading">
+                <h2>Spin & Win</h2>
+            </div>
+            <div class="paragraph">
+                <p>Click the ‘Spin’ button to find out if <br>you have won</p>
+            </div>
+            <hr>
+            <div class="image">
+                <img src="../../assets/spin/Group 2123.png">
+                <div class="panel">
+                    <div class="slotwrapper" id="example6">
+                        <ul>
+                            <li style="margin-left: -12px;"><img src="../../assets/spin/Image 14.png"></li>
+                            <li style="margin-left: -12px;"><img src="../../assets/spin/Image 14.png"></li>
+                            <li style="margin-left: -12px;"><img src="../../assets/spin/Image 14.png"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="../../assets/spin/Image 25.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li class="text-danger"><img src="../../assets/spin/Image 14.png"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="../../assets/spin/Image 26.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li><img src="../../assets/spin/Image 14.png"></li>
+                            <li class="text-danger"><img src="../../assets/spin/Image 14.png"></li>
+                        </ul>
+                    <div>
+                        <!-- <button type="button" class="btn btn-success btn-lg" id="btn-example6">Start Spin!</button> -->
+                    <!-- </div> -->
+                </div>
+                <!-- <button type="button" class="btn btn-success btn-lg" id="btn-example6" (click)="spin()"> 
+                    SPIN
+                </button> -->
+                <script type="text/javascript">
+                    $('#btn-example6').click(function() {
+                        var num1 = $('#example6 ul').val();
+                        var num2 = $('#example6 ul').val();
+                        var num3 = $('#example6 ul').val();
+                        $('#example6 ul').playSpin({
+                            endNum: [0 ,2, 3],
+                        });
+                        // $('#example6 ul').playSpin();
+                    });
+                </script>
+            </div>
+            <!-- </div> -->
+           
+            <div class="button" *ngIf="!startSeqs">
+                <button type="button" class="btn btn-success btn-lg" id="btn-example6" (click)="spin(1)"> 
+                    SPIN
+                </button>
+            </div>
+            <div class="button" *ngIf="startSeqs">
+                <button type="button" class="btn btn-success btn-lg" id="btn-example6" style="background-color: white;" (click)="Next()"> 
+                    SPIN
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+.jumbotron {
+    background-color: blue;
+}
+h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: left;
+    color: white;
+}
+.Address {
+    display: flex;
+}
+.image {
+    text-align: right;
+}
+
+button {
+    display: block;
+    width: 300pt;
+    height: 42pt;
+    background-color: rgb(255, 222, 0);
+    border-radius: 4pt;
+    font-size: 12pt;
+    color: black;
+}
+
+.example-card {
+    width: 250pt;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.card {
+    width: 250pt;
+    border-radius: 4pt;
+    height: 62pt;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.card .card-body p {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+
+.btn-group {
+    background-color: rgb(13, 72, 131);
+}
+
+label {
+    color: white;
+}
+.radio .card {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100pt;
+    border-radius: 4pt;
+    height: 40pt;
+}
+
+.radio .card label {
+    margin-left: -50px;
+    margin-top: 10px;
+}
+.radio .card .form-check-input {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.checkbox .card {
+    border: 1px solid rgb(255, 255, 255);
+}
+.checkbox .card  {
+    margin-top: 5px;
+    width: 150pt;
+    border-radius: 4pt;
+    height: 80pt;
+}
+  
+@media only screen and (min-width:  360px) and (max-width: 640px) {
+    button {
+        width: 250pt;
+    }
+}
+
+@media only screen and (min-width:  320px) and (max-width: 568px) {
+    button {
+        width: 250pt;
+    }
+}

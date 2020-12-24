@@ -1,0 +1,33 @@
+.jumbotron  {
+    background-color: blue;
+}
+.heading {
+    color: white;
+}
+.paragraph {
+    color: white;
+}
+
+button {
+    width: 125pt;
+    margin-top: 10px;
+    height: 42pt;
+    background-color: white;
+    border-radius: 4pt;
+    font-size: 12pt;
+    color: blue;
+}
+ p {
+     color: white;
+ }
+
+ h3 {
+     color: white;
+ }
+
+.fa-facebook-square {
+    color: blue;
+    /* width: 22pt;
+    height: 22pt;  */
+}
+ 

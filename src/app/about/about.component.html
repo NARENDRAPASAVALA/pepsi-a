@@ -1,0 +1,142 @@
+<div class="container">
+    <div class="row">
+        <div class="jumbotron text-center">
+            <img src="../../assets/home/Image 22.png">
+            <h3>Let us know more about 
+                yourself</h3>
+            <hr>
+            <div class="Address">
+                <p>Your Address:</p>
+                <img class="image" src="../../assets/about/Group 2125.png">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                   <p> #781, 17f, 3rd Main, 6th Block,<br>                              
+                    Koramangala, Bangalore - 560068.</p>
+                </div>
+              </div>
+            <p>How old are you ?</p>
+            <!-- <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Option 1</mat-radio-button>
+                <mat-radio-button value="2">Option 2</mat-radio-button>
+            </mat-radio-group> -->
+            <div class="radio" style="display: flex;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault1"> < 15 years </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-left: 20px;">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault2"> 15 - 25 years </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="radio" style="display: flex;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault3"> 25 - 35 years </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-left: 20px;">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault4"> > 35 years </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Your favourite drink ?</p>
+            <div class="checkbox" style="display: flex;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample1" checked>
+                            <img src="../../assets/about/Image 1.png" class="form-check-label" id="roundedExample1" style="margin-top: 20px;">
+                            <label class="form-check-label" for="roundedExample1">Sprite</label>
+                        </div>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-body" style="margin-left: 15px;">
+                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample2">
+                            <img src="../../assets/about/Image 2.png" class="form-check-label" id="roundedExample2" style="margin-top: 20px;">
+                            <label class="form-check-label" for="roundedExample2">Red Bull</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button mat-raised-button color="primary" (click)="about()">Next</button>
+            </div>
+            <div class="checkbox" style="display: flex;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample3">
+                            <img src="../../assets/about/Image 23.png" class="form-check-label" id="roundedExample3" style="margin-top: 20px;">
+                            <label class="form-check-label" for="roundedExample3">Mountain Dew</label>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" style="margin-left: 15px;">
+                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample4" checked>
+                            <img src="../../assets/about/pepsi-logo@logotyp.us.png" class="form-check-label" id="roundedExample4" style="margin-top: 20px;">
+                            <label class="form-check-label" for="roundedExample4">Pepsi</label>
+                          </div> 
+                    </div>
+                </div>
+            </div>
+            <p>How often do you drink ?</p>
+            <div class="radio" style="display: flex;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault1">Daily </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-left: 20px;">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault2">weekly </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="radio" style="display: flex;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault3">Monthly </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked />
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-left: 20px;">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault4"> None of the above </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" style="margin-left: 0px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
