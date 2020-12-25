@@ -13,9 +13,13 @@
                 <hr>
                 <div class="image">
                     <div style="text-align:center">
-                        <div>
+                        <div class="camera">
                           <p>{{seconds}}</p>
-                          <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+                          <div class="webcam">
+                            <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+                            <!-- <br/> -->
+                          </div>
+                          <!-- <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam> -->
                           <br/>
                           <button id="snapshotBtn" (click)="triggerSnapshot();">Next</button>
                         </div>

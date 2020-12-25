@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 export class CodeGenerateComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    // (<any>$("#input-id")).rating();
+   }
 
   ngOnInit() {
   }
