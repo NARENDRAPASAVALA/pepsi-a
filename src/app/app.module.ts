@@ -15,6 +15,9 @@ import {StarRatingModule} from 'angular-star-rating';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {WebcamModule} from 'ngx-webcam';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { RatingModule } from 'ng-starrating';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbdRatingBasic } from './rating-basic';
 
 @NgModule({
   declarations: [
@@ -25,13 +28,15 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     CropImageComponent,
     CodeGenerateComponent,
     SpinComponent,
-    WinnerComponent
+    WinnerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
     FormsModule,
     WebcamModule,
+    RatingModule ,
     StarRatingModule.forRoot(),
     BrowserAnimationsModule
   ],

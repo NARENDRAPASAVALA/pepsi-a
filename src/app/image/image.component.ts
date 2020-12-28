@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import {WebcamImage} from 'ngx-webcam';
 import {Subject, Observable} from 'rxjs';
@@ -19,8 +19,18 @@ export class ImageComponent implements OnInit {
   // public canvas: ElementRef;
 
   // public captures: Array<any>;
+  private width: number;
+  private height: number;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event?: Event) {
+    const win = !!event ? (event.target as Window) : window;
+    this.width = win.innerWidth;
+    this.height = win.innerHeight;
+  }
 
   constructor(private router: Router) { 
+    this.onResize();
     // this.captures = [];
   }
 

@@ -10,6 +10,7 @@
 
 .rating {
     font-size: 38pt;
+    /* background-color: yellow; */
     /* text-align: center; */
     height: 36.3pt;
 }
@@ -27,3 +28,4 @@ button {
     font-size: 12pt;
     color: black;
 }
+

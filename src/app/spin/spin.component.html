@@ -56,16 +56,14 @@
             </div>
             <!-- </div> -->
            
-            <div class="button" *ngIf="!startSeqs">
-                <button type="button" class="btn btn-success btn-lg" id="btn-example6" (click)="spin(1)"> 
-                    SPIN
-                </button>
+            <div class="button"  *ngIf="!showMainContent">
+                <button type="button" class="btn btn-success btn-lg" id="btn-example6" (click)="spin()">SPIN</button>
             </div>
-            <div class="button" *ngIf="startSeqs">
+            <!-- <div class="button"  *ngIf="showMainContent">
                 <button type="button" class="btn btn-success btn-lg" id="btn-example6" style="background-color: white;" (click)="Next()"> 
                     SPIN
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

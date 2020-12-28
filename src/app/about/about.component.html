@@ -9,18 +9,28 @@
                 <p>Your Address:</p>
                 <img class="image" src="../../assets/about/Group 2125.png">
             </div>
-            <div class="card">
+            <div class="input">
+                <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder=" #781, 17f, 3rd Main, 6th Block, Koramangala, Bangalore - 560068.">
+                <!-- <input type="text" id="address"></input> -->
+            </div>
+            <!-- <div class="card">
                 <div class="card-body">
                    <p> #781, 17f, 3rd Main, 6th Block,<br>                              
                     Koramangala, Bangalore - 560068.</p>
                 </div>
-              </div>
-            <p>How old are you ?</p>
-            <!-- <mat-radio-group aria-label="Select an option">
-                <mat-radio-button value="1">Option 1</mat-radio-button>
-                <mat-radio-button value="2">Option 2</mat-radio-button>
-            </mat-radio-group> -->
-            <div class="radio" style="display: flex;">
+            </div> -->
+              <!-- <div class="year"> -->
+                <p>How old are you ?</p>
+                <div id="donate">
+                    <label ><input type="radio" name="toggle"><span>< 15 years</span></label>
+                    <label><input type="radio" name="toggle"><span>15 - 25 years</span></label>
+                    <div>
+                        <label ><input type="radio" name="toggle"><span>25 - 35 years</span></label>
+                        <label><input type="radio" name="toggle"><span>> 35 years</span></label>
+                    </div>
+                </div>
+              <!-- </div> -->
+            <!-- <div class="radio" style="display: flex;">
                 <div class="card">
                     <div class="card-body">
                         <div class="form-check">
@@ -55,53 +65,74 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <p>Your favourite drink ?</p>
-            <div class="checkbox" style="display: flex;">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample1" checked>
-                            <img src="../../assets/about/Image 1.png" class="form-check-label" id="roundedExample1" style="margin-top: 20px;"><br>
-                            <label class="form-check-label" for="roundedExample1">Sprite</label>
-                        </div>
+            </div> -->
+            <div>
+                <p style="margin-top: 145px;">Your favourite drink ?</p>
+                <!-- <div id="donate"> -->
+                    <!-- <label ><input type="radio" name="toggle12"><img src="../../assets/about/Image 1.png" class="form-check-label" id="toggle12" style="margin-top: 20px;background-color: blue;" ><br><span> Sprite</span></label>
+                    <label><input type="radio" name="toggle13"> <img src="../../assets/about/Image 2.png" class="form-check-label" id="toggle13" style="margin-top: 20px;background-color: blue;"><br><span>Red Bull</span></label>
+                    <div class="button">
+                        <button mat-raised-button color="primary" (click)="about()">Next</button>
                     </div>
-                </div> 
-                <div class="card">
-                    <div class="card-body" style="margin-left: 15px;">
-                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample2">
-                            <img src="../../assets/about/Image 2.png" class="form-check-label" id="roundedExample2" style="margin-top: 20px;"><br>
-                            <label class="form-check-label" for="roundedExample2">Red Bull</label>
+                    <div>
+                        <label ><input type="radio" name="toggle14"><img src="../../assets/about/Image 23.png" class="form-check-label" id="toggle14" style="margin-top: 20px;background-color: blue;"><br><span>Mountain Due</span></label>
+                        <label><input type="radio" name="toggle15"><img src="../../assets/about/pepsi-logo@logotyp.us.png" class="form-check-label" id="toggle15" style="margin-top: 20px;background-color: blue;"><br><span> Pepsi</span></label>
+                    </div>
+                </div> -->
+                <div class="checkbox" style="display: flex;">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                                <input type="checkbox" class="form-check-input filled-in" id="roundedExample1" checked>
+                                <img src="../../assets/about/Image 1.png" class="form-check-label" id="roundedExample1" style="margin-top: 20px;"><br>
+                                <label class="form-check-label" for="roundedExample1">Sprite</label>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="card-body" style="margin-left: 15px;">
+                            <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                                <input type="checkbox" class="form-check-input filled-in" id="roundedExample2">
+                                <img src="../../assets/about/Image 2.png" class="form-check-label" id="roundedExample2" style="margin-top: 20px;"><br>
+                                <label class="form-check-label" for="roundedExample2">Red Bull</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="button">
-                <button mat-raised-button color="primary" (click)="about()">Next</button>
-            </div>
-            <div class="checkbox" style="display: flex;">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample3">
-                            <img src="../../assets/about/Image 23.png" class="form-check-label" id="roundedExample3" style="margin-top: 20px;"><br>
-                            <label class="form-check-label" for="roundedExample3">Mountain Dew</label>
-                        </div> 
-                    </div>
+                <div class="button">
+                    <button mat-raised-button color="primary" (click)="about()">Next</button>
                 </div>
-                <div class="card">
-                    <div class="card-body" style="margin-left: 15px;">
-                        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-                            <input type="checkbox" class="form-check-input filled-in" id="roundedExample4" checked>
-                            <img src="../../assets/about/pepsi-logo@logotyp.us.png" class="form-check-label" id="roundedExample4" style="margin-top: 20px;"><br>
-                            <label class="form-check-label" for="roundedExample4">Pepsi</label>
-                          </div> 
+                <div class="checkbox" style="display: flex;">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                                <input type="checkbox" class="form-check-input filled-in" id="roundedExample3">
+                                <img src="../../assets/about/Image 23.png" class="form-check-label" id="roundedExample3" style="margin-top: 20px;"><br>
+                                <label class="form-check-label" for="roundedExample3">Mountain Dew</label>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" style="margin-left: 15px;">
+                            <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
+                                <input type="checkbox" class="form-check-input filled-in" id="roundedExample4" checked>
+                                <img src="../../assets/about/pepsi-logo@logotyp.us.png" class="form-check-label" id="roundedExample4" style="margin-top: 20px;"><br>
+                                <label class="form-check-label" for="roundedExample4">Pepsi</label>
+                              </div> 
+                        </div>
                     </div>
                 </div>
             </div>
             <p>How often do you drink ?</p>
-            <div class="radio" style="display: flex;">
+            <div id="donate">
+                <label ><input type="radio" name="toggle1"><span>Daily </span></label>
+                <label><input type="radio" name="toggle1"><span>weekly</span></label>
+                <div>
+                    <label ><input type="radio" name="toggle1"><span>Monthly</span></label>
+                    <label><input type="radio" name="toggle1"><span>None of the above</span></label>
+                </div>
+            </div>
+            <!-- <div class="radio" style="display: flex;">
                 <div class="card">
                     <div class="card-body">
                         <div class="form-check">
@@ -136,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

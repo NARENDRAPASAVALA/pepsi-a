@@ -16,7 +16,7 @@
                         <div class="camera">
                           <p>{{seconds}}</p>
                           <div class="webcam">
-                            <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+                            <webcam [trigger]="triggerObservable" [width]="300" (imageCapture)="handleImage($event)"></webcam>
                             <!-- <br/> -->
                           </div>
                           <!-- <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam> -->
@@ -36,7 +36,7 @@
                 </div>
                 <hr>
                 <div class="camera">
-                    <img [src]="webcamImage.imageAsDataUrl"/>
+                    <img [width]="300" [src]="webcamImage.imageAsDataUrl"/>
                 </div>
                 <div class="button">
                     <button type="button" class="btn btn-light" style="width: 150px; background-color: white;" (click)="retake()">Re-Take</button>

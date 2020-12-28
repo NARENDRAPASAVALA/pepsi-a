@@ -9,7 +9,7 @@
 }
 
 button {
-    width: 125pt;
+    width: 160pt;
     margin-top: 10px;
     height: 42pt;
     background-color: white;
@@ -29,5 +29,12 @@ button {
     color: blue;
     /* width: 22pt;
     height: 22pt;  */
+}
+
+.rating {
+    font-size: 38pt;
+    /* background-color: yellow; */
+    /* text-align: center; */
+    height: 36.3pt;
 }
  

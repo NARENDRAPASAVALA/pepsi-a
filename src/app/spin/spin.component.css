@@ -76,6 +76,27 @@
 @media only screen and (max-width: 414px) {
     .slotwrapper {
         /* margin-top: -10px; */
-        margin-left: 5px;
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .slotwrapper {
+        /* margin-top: -10px; */
+        margin-left: 22px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .slotwrapper {
+        /* margin-top: -10px; */
+        margin-left: 78px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .slotwrapper {
+        /* margin-top: -10px; */
+        margin-left: 0px;
     }
 }
